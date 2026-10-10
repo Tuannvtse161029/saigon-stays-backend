@@ -7,6 +7,8 @@
 > **Email & Background Processing:** MailKit / MimeKit + Hangfire Engine  
 > **Payment & Settlement:** VietQR Dynamic QR Code & Webhook Auto-Reconciliation
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Tuannvtse161029/saigon-stays-backend)
+
 ---
 
 ## 🚀 1. Cấu trúc Thư mục Dự án
