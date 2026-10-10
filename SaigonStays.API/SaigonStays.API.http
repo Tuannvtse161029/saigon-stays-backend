@@ -1,0 +1,6 @@
+@SaigonStays.API_HostAddress = http://localhost:5019
+
+GET {{SaigonStays.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

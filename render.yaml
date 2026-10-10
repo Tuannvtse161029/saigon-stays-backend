@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: saigon-stays-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: singapore # or oregon, frankfurt
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: ConnectionStrings__DefaultConnection
+        value: Server=35.240.181.166;Database=homestay;User Id=sa;Password=baopro2147!;TrustServerCertificate=True;Encrypt=False;MultipleActiveResultSets=true
+      - key: JwtSettings__Secret
+        value: SaigonStaysSuperSecretSecurityKey2026!@#$MustBeAtLeast32BytesLongForHmacSha256
+      - key: JwtSettings__Issuer
+        value: SaigonStaysAPI
+      - key: JwtSettings__Audience
+        value: SaigonStaysClient
+      - key: JwtSettings__ExpiryMinutes
+        value: 1440
+      - key: VietQR__BankId
+        value: MB
+      - key: VietQR__AccountNo
+        value: "0987654321"
+      - key: VietQR__AccountName
+        value: "SAIGON STAYS HOMESTAY"
+      - key: VietQR__Template
+        value: compact
